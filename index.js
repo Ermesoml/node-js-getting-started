@@ -1,5 +1,9 @@
 const express = require('express')
+const PORT = process.env.PORT || 5000
+
+
 const app = express();
 
 app.use(express.static('public', { dotfiles: 'allow' }));
-app.listen(8080);
+
+app.listen(PORT);
